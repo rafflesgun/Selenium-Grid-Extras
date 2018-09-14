@@ -1,4 +1,5 @@
-[![Gitter](https://badges.gitter.im/groupon/Selenium-Grid-Extras.svg)](https://gitter.im/groupon/Selenium-Grid-Extras?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+
+[![Build Status](https://travis-ci.org/rafflesgun/Selenium-Grid-Extras.svg?branch=master)](https://travis-ci.org/rafflesgun/Selenium-Grid-Extras)
 
 NOTICE - Looking for people to maintain this project. I (@smccarthy) does not have the time for now. If interested please contact me via an open issue or #selenium on the freenode network (or Slack). Thank you!
 
