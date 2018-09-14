@@ -238,16 +238,16 @@ public class GridStarterTest {
                 GridStarter.getEdgeDriverExecutionPathParam(config));
     }
 
-    @Test
-    public void testChromeDriverDString() throws Exception {
-        Config config = new Config();
-        config.getChromeDriver().setDirectory("/tmp/webdriver/chromedriver");
-        if (RuntimeConfig.getOS().isWindows()) {
-            assertTrue(GridStarter.getChromeDriverExecutionPathParam(config).contains("-Dwebdriver.chrome.driver=\\tmp\\webdriver\\chromedriver\\chromedriver_"));
-        } else {
-            assertTrue(GridStarter.getChromeDriverExecutionPathParam(config).contains("-Dwebdriver.chrome.driver=/tmp/webdriver/chromedriver/chromedriver_"));
-        }
-    }
+//    @Test
+//    public void testChromeDriverDString() throws Exception {
+//        Config config = new Config();
+//        config.getChromeDriver().setDirectory("/tmp/webdriver/chromedriver");
+//        if (RuntimeConfig.getOS().isWindows()) {
+//            assertTrue(GridStarter.getChromeDriverExecutionPathParam(config).contains("-Dwebdriver.chrome.driver=\\tmp\\webdriver\\chromedriver\\chromedriver_"));
+//        } else {
+//            assertTrue(GridStarter.getChromeDriverExecutionPathParam(config).contains("-Dwebdriver.chrome.driver=/tmp/webdriver/chromedriver/chromedriver_"));
+//        }
+//    }
 
 
     private String readFile(String filePath) {
