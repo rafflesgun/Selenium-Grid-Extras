@@ -1,1 +1,15 @@
 language: java
+before_install: cd SeleniumGridExtras
+before_deploy:
+  - mvn help:evaluate -N -Dexpression=project.version|grep -v '\['
+  - export project_version=$(mvn help:evaluate -N -Dexpression=project.version|grep -v '\[')
+deploy:
+  provider: releases
+  api_key: '$GITHUB_API_KEY'
+  file: 'target/SeleniumGridExtras-$project_version-jar-with-dependencies.jar'
+  skip_cleanup: true
+  on:
+    repo: rafflesgun/Selenium-Grid-Extras
+    tags: true
+    all_branches: true
+  name: $project_version
