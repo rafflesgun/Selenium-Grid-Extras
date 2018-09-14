@@ -5,7 +5,7 @@ before_deploy:
 deploy:
   provider: releases
   api_key: '$GITHUB_API_KEY'
-  file: 'SeleniumGridExtras-$project_version.jar'
+  file: 'SeleniumGridExtras/SeleniumGridExtras-$project_version.jar'
   skip_cleanup: true
   on:
     repo: rafflesgun/Selenium-Grid-Extras
