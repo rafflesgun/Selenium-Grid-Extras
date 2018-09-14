@@ -9,4 +9,6 @@ deploy:
   skip_cleanup: true
   on:
     repo: rafflesgun/Selenium-Grid-Extras
+    tags: true
+    all_branches: true
   name: $project_version
